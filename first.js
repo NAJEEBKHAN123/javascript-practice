@@ -163,3 +163,40 @@
 //     grade = "F"
 // }
 // console.log("according to your score your grade:",grade;)
+
+
+
+// CHPTER 3 LOOPS 
+// for(let i=1; i <=5; i++){
+
+// console.log("anpa college");
+
+// }
+// to cultulate sum of 1 to 10
+// let sum =0;
+// let n =7
+// for(let i = 1; i<=n; i++){
+//     sum = sum + i;
+
+// }
+// console.log("sum =", sum);
+// console.log("ended");
+// for(let i=0; i<=5; i++){
+//     console.log("i =", i);
+// }
+
+
+
+
+
+
+// while loog
+
+
+
+i =1;
+while(i<=5);
+{
+    console.log("anpa college");
+    i++
+}
