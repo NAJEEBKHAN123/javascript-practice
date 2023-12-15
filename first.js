@@ -190,13 +190,30 @@
 
 
 
-// while loog
+// while loop
+
+// let i= 1;
+// while(i<=10){
+//     console.log("najeeb");
+// }
 
 
+// do-while loop;
+// let i =1;
+// do{
+//     console.log("i",i);
+//     i++;
+// }while(i <=10);
 
-i =1;
-while(i<=5);
-{
-    console.log("anpa college");
-    i++
+// for-of loop
+// let str ="najeeb ullah";
+// let size =0;
+// for(let val of str){
+//     console.log("val=",val);
+// }
+
+// PRACTICES-2
+// print all even number 0 to 100;
+for(let num=0; num<=100; num++){
+    console.log("num=",num);
 }
