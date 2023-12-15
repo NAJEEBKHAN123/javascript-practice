@@ -214,6 +214,55 @@
 
 // PRACTICES-2
 // print all even number 0 to 100;
-for(let num=0; num<=100; num++){
-    console.log("num=",num);
-}
+// for(let num=0; num<=100; num++){
+
+//     console.log("num=",num);
+// }
+// for(let val=1; val<=10; val++){
+    //     console.log("val",val);
+    // }
+    // for(let num=0; num<=100; num++){
+    //     if(num%2 === 0){
+    //      console.log("num=",num);
+    //     }
+    // }
+    // odd num
+    // for(let num=0; num<=100; num++){
+    //     if(num%2 !== 0){
+    //      console.log("num=",num);
+    //     }
+    // }
+
+    // Q2 . 
+    // let gameNum =25;
+    // let userNum= prompt("guess the game number:");
+    // while(userNum !=gameNum){
+    // userNum= prompt("you enter the wrong number. guess again ");
+    // }
+    // console.log("congratulatio you entered the right number");
+//  for(let val=0; val<=99; val++){
+//     if(val%2 === 0){
+//     console.log("val=", val);}
+//  }
+
+
+
+
+    // STRING
+
+    // let str ="najeeb";
+    // let str2='khanbar';
+    // console.log(str[3]);
+
+    // template literatls
+
+//     let specialsring= `this is a sting `;
+//     console.log(typeof specialsring);
+//    let output =`the cost of ${obj.item}`
+
+// for(num=0; num<=100; num++){
+//     if(num%2 !== 0){
+//         console.log("num", num);
+//     }
+
+// }
