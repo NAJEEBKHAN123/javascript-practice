@@ -266,3 +266,131 @@
 //     }
 
 // }
+
+// ARRAYS
+
+
+
+// let marks_student1 =93;
+// let marks_student2 =94;
+
+// let marks= [89, 34, 65, 93, 81];
+// console.log(marks);
+// console.log(marks.length);
+// let heroes =["najeeb", "yasir","kamran","din", "umair", "kashif"];
+// console.log(heroes);
+
+// LOOP OVER THE AN ARRAY
+
+// le
+// let cities =["pesh", "isla", "lahor"];
+//     for(let city of cities){
+//         console.log(city.toUpperCase());
+//     }
+
+// alert("Hello dear how are you..");
+// console.log("this is me najeeb ullah");
+
+// console.log("this is me najeeb ullah do you know me");
+// var a = prompt("Enter your full name");
+// var isTrue =confirm("are you want to go to UK")
+// if(isTrue){
+//     console.log("Go to Uk")
+// }
+// else{
+//     console.log("don't go to UK")
+// }
+// console.log("you are is" + a)
+// console.log("don't write you name")
+// console.log("Enter your ogiginal name")
+
+
+
+// alert("Thanks for your waching");
+// var a= prompt("how are you")
+// console.log("Huy i'm najeeb")
+
+// var x = "Hello world!";
+// var z = "Hi i'm najeeb";
+// z = 'dear khan'
+// document.write(x);
+// document.write(z);
+// document.write(z);
+// var first, second;
+// first = 50;
+// document.write(first);
+
+// var thanks = "Thank for your input";
+// alert(thanks);
+
+// var originalNum = "100";
+// var newNum = 9;
+//  console.log(originalNum + newNum)
+
+//  var sath =144;
+//  alert(sath);
+//  var a =prompt(Hello);
+//  alert(Hello);
+
+// var message = "thanks";
+// var userNum = "Najeeb";
+// var hello = "!";
+// var all = message + userNum + hello;
+// alert(all);
+// alert("message" + "userName" + "hello")
+
+
+
+// prompt
+
+
+
+// prompt(welcome);
+// alert(helo);
+// var a = prompt("what your name?");
+// alert
+// document.write(a);
+
+// var spec = prompt("Your species?", "Najeeb");
+//  alert(spec);
+// var question = "Your species?";
+//  var defaultAnswer = "human";
+//  var spec = prompt(question, defaultAnswer);
+// var numberOfCats = prompt("How many cats?");
+//  var tooManyCats = numberOfCats + 1;
+//  alert(tooManyCats);
+
+// var x = prompt("Enter the correct number");
+// if(x === "najeeb"){
+//     alert("Thnaks!");
+// }if(x !== "najeeb"){
+//     alert("You're Wrong!");
+// }
+// var x = prompt("Enter the correct value!");
+// if(x === "najeeb"){
+//     alert("you're right!")}
+//     else if(x === "nadeem"){
+//         alert("incorrect but close");
+//     }
+//     else{
+//         alert("you're wrong!");
+//     }
+
+// const firstNumber =3;
+// const secondNumber =5;
+// var result = firstNumber + secondNumber
+// console.log(result);
+
+// const result = 3 + "34";
+// console.log(result);
+// const result =  "34" + 5 + 4;
+// console.log(result);
+// const result = 3 + 5 + "34";
+// console.log(result);
+// const result = 3 + "34" + 5;
+// console.log(result);
+
+// let totalNum = 30;
+// const incNum = totalNum++;
+// console.log(incNum);
+J
