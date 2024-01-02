@@ -393,4 +393,68 @@
 // let totalNum = 30;
 // const incNum = totalNum++;
 // console.log(incNum);
-J
+
+// let a = 5;
+// let b = 4;
+// console.log("a =", a, "& b =", b);
+// console.log("a + b =", a + b);
+// console.log("a % b =", a % b);
+// console.log("a - b =", a - b);
+// console.log("a ** b =", a ** b);
+// var x = prompt("Write your name!") 
+// document.write("najeeb");
+// confirm("Hello!")
+
+// unariy opera
+
+// let a = 4;
+// let b = 3;
+// console.log("a =",a, "& b =", b);
+// console.log("++a =", a);
+
+// CHAPTER NO 10 (IF STATEMENT)
+
+
+// const badaal = false;
+// if(badaal){
+//     alert("Take umbrella");
+// }
+// else{
+//     alert("No rain take out!");
+// }
+
+// let userAge = +prompt("Please enter your age.");
+// if(userAge >= 18){
+//     alert("You are eligable for licience!");
+//     alert("we will give your licence");
+// }
+// if(userAge <=18){
+//     alert("please take care you are not allowed for liciece.");
+// }
+
+// const cardBalance = +prompt("Please check your balance");
+// if(cardBalance >=50){
+//     alert("Welcome to Zu Peshawar");
+// }
+// if(cardBalance <=49){
+//     alert("Please recharge!");
+// }
+
+// CHAPTER NO 11(COMPRESION OPERATOR)
+// console.log(1 === 1);
+// console.log(1 !== 1);
+// console.log(2 > 1);
+// console.log(1 < 4);
+// console.log(1 <= 5);
+// console.log(4 >= 1);
+
+
+// CHPTER NO 12 (IS ESLE STATEMENT)
+
+
+
+
+
+
+
+
