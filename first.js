@@ -450,11 +450,80 @@
 
 
 // CHPTER NO 12 (IS ESLE STATEMENT)
+// const badaal = false;
+// if(badaal){
+//     alert("it's gonna to be rain in peshawar");
+// }
+// if(!badaal){
+//     alert("no chance for the rain in peshawar");
+// }
+
+// const paisa = false;
+// if (bhook && paisa){
+//     alert("get the burger");
+// }
+// else{
+//     alert("go mazy karo.")
+// }st bhook = true;
+// con
 
 
+// const userName = prompt("please enter your name.");
+// const userInput = +prompt("please enter a number");
+//  const ramainder = userName % 2;
+//  if(remainder === 0){
+//     alert(userName + "Bahi ap ne even enter kia hai");
+//  }else{userName + "Bahi ap ne odd enter kia hai"}
+
+// CHPTER NO 13 TESTING SETS FOR CONDITIOONS
 
 
+// if(weight > 300 && time < 6){
+//     alert("You're welcome!d");
+// }else{
+//     alert("please take care!");
+// }
 
 
+// if (weight > 300 && time < 6 && age > 17 && gender === "male") {
+//     console.log("Come to our tryout!");
+//        }
+//     else {
+//     console.log("Come to our cookout!");
 
+    // }
 
+    // if ((x === y || a === b) && c === d) {
+    //      g = h;
+    //      }
+    //      else {
+    //      e = f;
+    //      }
+
+    // CHPTER NO 14 ARRAY
+
+    // ARRAY -- > it store multiple of value in one variable
+    // example
+    // const words = ['hello', 'world', 'welcome'];
+
+    // var city0 = "Atlanta";
+    // var city1 = "Baltimore";
+    // var city2 = "Chicago";
+    // var city3 = "Denver";
+    // var city4 = "Los Angeles";
+    // var city5 = "Seattle";
+    // alert("Welcome to " + city5);
+ 
+    // var cities = ["Atlanta", "Baltimore", "Chicage", "Denver", "Los Andelous", "peshawar", "islamabad"];
+    // alert("welcome to"+" "+ cities[6]);
+
+    // var myfavorite = [1, "yasir", "kamran", "amin",];
+    // alert(myfavorite[3]);
+
+    // var pets = [];
+    // pets[2] = "dear";
+    // pets[3] = "how";
+    // pets[4] = "imng";
+    // pets [7] = "no"
+    // pets.pop("dear");
+    // console.log(pets[5]);
