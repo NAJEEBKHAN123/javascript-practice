@@ -527,3 +527,20 @@
     // pets [7] = "no"
     // pets.pop("dear");
     // console.log(pets[5]);
+
+    // practice
+
+    // function countVowels(str){
+    //     let count = 0;
+    //     for(const char of str){
+    //       if(char === "a" ||
+    //          char === "e" ||
+    //          char === "i" ||
+    //          char === "o" ||
+    //         char === "u"
+    //         ){
+    //             count++;
+    //         }
+    //     }
+    //     console.log(count)
+    // }
