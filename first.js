@@ -544,3 +544,98 @@
     //     }
     //     console.log(count)
     // }
+
+    // Conditonal statements------->
+    
+    // let age = 11;
+    // if(age >= 18){
+    //     console.log("You can vote");
+    // };
+    // if(age < 18){
+    //     console.log("You can't vote");
+    // }
+    // console.log(age);
+
+    // let age = +prompt("enter your age");
+    // let mode = +prompt("Enter some value");
+    // let color;
+    // if(mode === "dark"){
+    //     color = "black";
+    // }else if(mode === "light"){
+    //     color = "white";
+    // }
+    // else{
+    //     color = "blue"
+    // }
+    // console.log(color);
+    // if (age >= 18){
+    //     console.log("vote")
+    // }else{
+    //     console.log("not vote")
+    // // }
+    // let num = +prompt('enter any number');
+    // if(num%2 ===0){
+    //     console.log(num, "Tne number is even");
+    // }else{
+    //     console.log("Odd")
+    // };
+    // let age = +prompt("Enter your age");
+    // if(age = 18){ 
+    //     console.log("u r play with me");
+    // }else if(age > 60){
+    //     console.log("You are old");
+    // }else{
+    //     console.log("u are junior");
+    // }
+    // let age = prompt("enter age")
+    // let resu = age >= 18 ? "adult" : "not adlult";
+    // console.log(resu);
+
+    // practice -1
+
+    // let num = +prompt("enter any number");
+    // if(num%5 === 0){
+    //     console.log("The mutliple of 5")
+    // }else{
+    //     console.log("not multi")
+    // }
+
+    // practice 2
+
+    // let grade = +prompt("Enter your marks!");
+    // if(grade >= 80 && grade <=100){
+    //     console.log("Your grade is A")
+    // }else if(grade >=70 && grade <=89){
+    //     console.log("B-grade")
+    // }else if(grade >=60){
+    //     console.log("C.grade")
+    // }else if(grade >= 50){
+    //     console.log("D-grade")
+    // }else{
+    //     console.log("E");
+    // }
+
+    // let currenlytime = new Date();
+    // alert(currenlytime);
+    //  let avg = [34, 34, 56, 35, 34];
+    //  for(i=0; i<=avg; i++){
+        
+    //  }
+
+    // LOOOP in js 
+    // for(i=0; i<=100; i++){
+    //     console.log(i);
+    // };
+   
+//    let sum = 0;
+//     for(i = 1; i<=100; i++){
+//        sum = sum + i;
+//     };
+//     console.log("sum =", sum);
+   
+let i = 0;
+while(i<=5){
+    console.log(i);
+}
+let x = "helo";
+alert(x);
