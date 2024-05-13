@@ -633,9 +633,357 @@
 //     };
 //     console.log("sum =", sum);
    
-let i = 0;
-while(i<=5){
-    console.log(i);
-}
-let x = "helo";
-alert(x);
+// let i = 0;
+// while(i<=5){
+//     console.log(i);
+// }
+// let x = "helo";
+// alert(x);     
+
+
+
+        
+
+
+
+                    //    NEW CODE STARRT HERE `    ]
+
+// function foucusFun(){
+//      document.getElementById('name').style.backgroundColor = "red";
+// }
+// function blurFun(){
+//     document.getElementById('name').style.backgroundColor="blue";
+// }
+
+// 2nd method 
+
+// function foucusFun(element){
+//     element.style.backgroundColor = "red";
+// }
+// function blurFun(element){
+//    element.style.backgroundColor="";
+// }
+
+// let arr = [23,"only","super",54]
+// document.write(arr);
+// let x = arr.includes("only")
+
+// console.log(x)
+
+                                 // find()
+
+// var ages = [10, 12, 14, 50, 17]
+// console.log(ages);
+
+// var findElement = ages.find(adultAge);
+// console.log(findElement)
+
+// function adultAge(age){
+//     return age >= 18;
+// }
+
+                        //    findIndex()
+
+                        // var ages = [10, 12, 14, 50, 17]
+
+                        // console.log(ages);
+                        // var b = ages.findIndex(adultAge);
+                        // console.log(b);
+                        
+                        // function adultAge(age){
+                        //     return age >= 18;
+                        // }
+                        // filter()
+
+// var ages = [10,59, 12, 14, 50,54,78,18, 17]
+// console.log(ages);
+
+// let filter = ages.filter(checkAdult);
+// console.log(filter)
+
+// function checkAdult(age){
+//     return age >= 18;
+// }
+
+                //    toString()
+
+// var convertToString = ["only","sooo","can", "do", "that"];
+// console.log(convertToString)
+// let x = convertToString.toString("soo000")
+// console.log(x)
+
+// Fill()
+// var convertToString = ["only","sooo","can", "do", "that"];
+// console.log(convertToString)
+// let x = convertToString.fill("najee")
+// console.log(x)
+
+// let forEach = ["only","sooo","can", "do", "that"];
+//   forEach.forEach(function(value, index){
+//     console.log(index + " " + value)
+//   })
+
+// let x = [12,32,43,54,65,76]
+// x.forEach(loop)
+
+// function loop(value, index)
+// {
+//     console.log(index, value)
+// }
+
+        //************* */ *  OBJECT ****************
+
+// var object = {
+//     fName : "najeeb",
+//     Lname : "Ullah",
+//     rollNo : 23,
+//     email : "najeebkhanlaku@gmail.com",
+//     arr : ["khan", "form", "which"],
+//     total : function(){
+//          return 23000;
+//     },
+//     bestMovie : {
+//           'city' : "pehswar",
+//           'country': "pakistan",
+//     },
+// }
+// console.log(object)
+// document.write(object.bestMovie.city)
+
+                    //   object-11
+// var person = new Object();
+
+// person.fname = "najeee";
+// person.lname = "khan";
+// person.email = "najeebkhanlaku@gmail.com";
+
+// console.log(person.email);
+
+            //  const variable with array and object
+// const x = {
+//     fname : 'najee',
+//     lname : 'ullah',
+//     email : 'najeebkhanlaku@gmail.com'
+// } 
+// x.fname = "najeeb khan",
+// x.email = "najeeeeeee"
+// console.log(x)
+
+// const arr = [23,43,54,675,76];
+// arr[1] = 0;
+// console.log(arr)
+
+// function foucusFun(){
+//     document.getElementById('name').style.backgroundColor = "red"
+// }
+// function blurFun(){
+//     document.getElementById('name').style.backgroundColor = "blue";
+// }
+ 
+// var x = [3,46,65,76,87];
+// x.forEach(function(value,index){
+   
+//     document.write(index, " : " +value +"<br>")
+// });
+
+// var li = document.getElementsByTagName('li')
+// let x = li.length;
+// for(let i = 0; i < x; i++){
+//     if(li[i].innerHTML === ""){
+//         li[i].innerHTML = "comming soon"
+//         console.log(li)
+//     }
+// }
+
+//  for (var i = 0; i < howManyLi; i++) {
+//      if (liElements[i].innerHTML === "") {
+//      liElements[i].innerHTML = "coming soon";
+//      }
+//      }
+    
+// let countElement = document.getElementsByTagName('li');
+// let lengthOfEle = countElement.length;
+// for(let i = 0; i < lengthOfEle; i++){
+//     if(countElement[i].innerHTML === ""){
+//         countElement[i].innerHTML = "Not to work!"
+//     }
+// }
+// console.log(lengthOfEle)
+
+// let parents = document.getElementById('img');
+// parents.setAttribute("class", "special")
+
+// let findAttr = parents.hasAttribute('class')
+// let findAttr = parents.getAttribute('class')
+// let someEl = parents.attributes.length;
+// console.log(someEl)
+
+// let create = document.createElement('h2');
+// create.innerText = "h2 heading of dom";
+// console.log(create)
+
+// let som = document.getElementById('div');
+// let sum =som.before(create)
+// sum.createAttribute("class", "najees");
+// console.log(sum)
+
+// let newBtn = document.createElement('button');
+// newBtn.innerText = "click me!";
+// console.log(newBtn)
+// let som = document.querySelector('div');
+// som.append(newBtn);
+
+// let btn = document.createElement('button');
+// btn.innerText = 'click me!'
+// console.log(btn)
+
+// let div = document.querySelector("body");
+// div.append(btn,)
+
+// let para = document.querySelector("p")
+
+// para.remove()
+// console.log(para)
+
+// let btn = document.createElement('button');
+// btn.innerText = "click me!"
+// btn.style.backgroundColor = "red",
+// btn.style.color = "white" 
+// console.log(btn)
+// let only = document.querySelector('body');
+// only.prepend(btn)
+
+// let para = document.querySelector("p");
+// para.setAttribute("class", "najee");
+// para.style.fontSize = "30px"
+// console.log(para)
+
+
+// function toDisplay(){
+// let li = document.createElement('li');
+// let node = document.createTextNode('London');
+// li.appendChild(node)
+// document.getElementById("ul").appendChild(li)
+// console.log(li)
+// }
+
+// let div = document.querySelector('div');
+// let textNode = document.createTextNode("text inside div")
+// div.append(textNode)
+// let ul = document.getElementById('ul').append(div)
+// console.log(ul)
+
+// let ul = document.getElementById('ul');
+
+// console.log(ul)
+// ul.remove();
+// console.log(ul)
+
+// let btn = document.getElementById('btn')
+// let textnode = document.createTextNode("hello dear");
+// btn.append(textnode)
+// console.log(btn)
+// btn.remove()
+// function toDisplay(){
+//     let itemList = document.getElementById('ul');
+//     itemList.removeChild(itemList.lastElementChild)
+// }
+
+// remove specfic child of them 
+// function toDisplay(){
+
+//     let itemList = document.getElementById('ul');
+//     itemList.removeChild(itemList.children[1])
+// }
+// function toDisplay(){
+// let ul = document.getElementById('ul').children[0]
+// let textNode = document.createTextNode('london');
+// ul.replaceChild(textNode, ul.childNodes[0])
+// }
+
+// function toDisplay(){
+// let para = document.querySelector('p').classList;
+// console.log(para)
+// // para.setAttribute("class", "special");
+// para.add("special")
+// }
+
+// function toDisplay(){
+//     let para = document.querySelector('p').classList.remove("special");
+//     // para.add("special");
+// }
+// function toDisplay(){
+// document.addEventListener('click', function(){
+//     document.getElementById('para').innerHTML = "coming soon"
+// })}
+
+// let para = document.getElementById("para");
+// para.classList.add('content')
+
+// console.log(para)
+
+// var obj = {
+//     name : "najeeb",
+//     age : 20,
+//     email: "najeebkhanlaku@gmail.com",
+// }
+// for(var i in obj){
+//     console.log(obj[i]);
+// }
+
+// const fruits = ["apple", "orange", "cherry"];
+// fruits.forEach(function(value){
+
+//     console.log(value)
+// })
+
+// const fruits = ["apple", "orange", "cherry"];
+// fruits.forEach(myFunction);
+    
+// function myFunction(value, index){
+//     console.log(index,value)
+// }
+
+// const fruits = [2,3,4,5,6];
+// let b = fruits.map(Text)
+// console.log(b)
+
+// function Text(x)
+// {
+//     return x + 10; // you can multiplay and sub
+// }
+
+// let arr = [2,34,5,6,7,8];
+// let x = arr.length;
+// console.log(x)
+// let arr = "naeebkhanlaku@gamil.COM";
+// let x = arr.toUpperCase();
+// let x = arr.toLocaleLowerCase();
+// let x = arr.includes('a');// ture if not include any  letter is will be false
+// let x = arr.startsWith('a');
+// let x = arr.endsWith('m');
+// let x = arr.match(/a/g); // return new index of combination of same latter if you search
+// let x = arr.search('g'); // is give index if elemet is correct g present in 14 index
+// let x = arr.match('g'); // also give index width
+// let x = arr.indexOf('g');//  alse give index
+// let x = arr.lastIndexOf('a'); // it give last index of the same latter
+// let x = arr.replace(/a/g, 'A'); // it give last index of the same latter
+//  let  arr = "       arry     ";
+//  let x = arr.trim()
+// let x = arr.charAt(14)//return value in 
+// let x = arr.charCodeAt(20)
+// let x  = String.fromCharCode(110)hh
+// let a = "only form them"
+// let x = arr.concat(a);
+// let x = arr.split('a')// show splite inside string value
+// let x = arr.repeat(3);// repeat the given string
+// let x = arr.slice(0,23);
+// let x = arr.substring(1,4);
+// let y = 45;
+// let x = y.toString();//convert number into string
+// console.log(x)
+
+let arr = "naeebkhanlaku@gamil.COM";
+let x = arr.charAt(20)
+console.log(x)
+
