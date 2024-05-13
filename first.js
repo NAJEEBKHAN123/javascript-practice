@@ -983,7 +983,26 @@
 // let x = y.toString();//convert number into string
 // console.log(x)
 
-let arr = "naeebkhanlaku@gamil.COM";
-let x = arr.charAt(20)
+// let num = "99";
+// let x = parseInt(num)
+// console.log(x)
+
+// let num = "99.3999";
+// let x = parseFloat(num)
+// console.log(x)
+
+// let num = "3456";
+// let x = isFinite(num)
+// console.log(x)
+// let num = 99;
+// let x = Number.isInteger(num)
+// console.log(x)
+// var num = 99.399;
+// var x = num.toFixed(1);
+// console.log(x)
+var num = 9.599;
+var x = num.toPrecision(2);
 console.log(x)
+
+
 
