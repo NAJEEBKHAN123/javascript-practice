@@ -1,24 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en" id="html-root">
+<head id="head-section">
+  <meta charset="UTF-8" id="meta-charset">
+  <meta name="viewport" content="width=device-width, initial-scale=1" id="meta-viewport">
+  <title id="title">Sample HTML Page</title>
+  <style id="style-block">
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    ul {
+      margin: 20px 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    #test{
+      width: full;
+      height: 200px;
+      background-color: gainsboro;
+      border: 1px solid red;
+    }
+  </style>
 </head>
-<body>
-    <!-- <div class="type">
-        Hey this is me najeeb ullah,
-    </div> -->
+<body id="body">
 
-    <div></div>
-    <ul id="ul">
-       <li>pakistan</li>
-       <li>India</li>
-       <li>bajaur</li>
+  <header id="main-header" class="heading">
+    <h1 id="header-title">Welcome to My Sample Page</h1>
+  </header>
+
+  <main id="item">
+    <p id="first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+    
+    <ul class="item-list">
+      <li id="list-item-1">First item in the list</li>
+      <li id="list-item-2">Another interesting point</li>
+      <li id="list-item-3">More content goes here</li>
+      <li id="list-item-4">This is just a demo</li>
     </ul>
-    <button id="btn" onclick="toDisplay()">click me!</button>
-    <p id="para">paragraph inside the body</p>
-    <script src="first.js"></script>
+
+    <ul id="list" class="lis" style="border: 1px solid red">
+       <li><a href="">Home</a></li>
+       <li><a href="">About</a></li>
+       <li><a href="">Contact</a></li>
+       <li><a href="">Address</a></li>
+
+      </ul>
+      
+      <div id="test"><h1>hey</h1></div>
+
+
+   
+
+    <p id="second-paragraph">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus.</p>
+  </main>
+
+  <footer id="main-footer">
+    <p id="footer-text">&copy; 2025 Your Website Name. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
 </body>
 </html>
