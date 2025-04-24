@@ -632,5 +632,138 @@
 // console.log(arr.length); // ?
 // console.log(!!"a"); // 
 
-let newElement = document.new
-console.log(newElement)
+// let newElement = document.createElement('h2');
+// let newText = document.createTextNode('Hello Javascript');
+
+// newElement.appendChild(newText)
+
+// let result = document.getElementById('test')
+// result.insertBefore(newElement, result.childNodes[0])
+
+// // console.log(newText))
+// console.log(result)
+
+// let newText = document.createTextNode(' from apna college student');
+
+// let result = document.getElementById('heading')
+// result.appendChild(newText)
+// console.log(result)
+
+// let target = document.getElementById('heading')
+
+// target.innerText = target.innerText + " from apna college student"
+
+// console.log(target.innerText)
+
+
+// let divs = document.querySelectorAll('.box')
+
+// let idx = 1;
+// for(let div of divs){
+//     div.innerText = `This is div ${idx}`
+//     idx++
+// }
+
+
+// console.log(divs)
+
+// let div = document.querySelector('#test')
+// div.style.backgroundColor = 'red'
+// div.style.backgroundColor = 'blue'
+// div.style.color = 'white'
+// div.style.padding = '10px'
+// div.style.fontSize = '30px'
+
+// console.log(div)
+
+// let div = document.getElementById('test')
+// let id = div.getAttribute('style')
+// console.log(id)
+
+// let div = document.getElementById('test')
+// let id = div.setAttribute('class', 'this')
+// console.log(div)
+
+
+// let div = document.getElementById('test')
+
+// let newElement = document.createElement('button')
+// newElement.innerText = 'click me!'
+// div.insertBefore(newElement, div.childNodes[0])
+// console.log(newElement)
+
+// let newElement = document.createElement('button')
+// newElement.innerText = 'click me!'
+// newElement.style.backgroundColor = 'red'
+// newElement.style.color = 'white'
+
+// let target = document.querySelector('body');
+// // target.insertBefore(newElement, target.childNodes[0])
+// target.before(newElement)
+
+// console.log(target)
+
+
+// let target = document.querySelector('.content')
+// target.classList('class', 'newclass')
+
+// console.log(target)
+
+
+// let toggleBtn = document.querySelector('#toggle');
+// let currMode = 'light'
+
+// toggleBtn.addEventListener('click', () =>{
+//     if(currMode === 'light'){
+//         currMode = 'dark'
+//        document.querySelector('body').style.backgroundColor = "black"
+//        document.querySelector('body').style.color = "white"
+
+//     } else{
+//         currMode ='light'
+//        document.querySelector('body').style.backgroundColor = "white"
+//        document.querySelector('body').style.color = "black"
+
+
+//     }
+//     console.log(currMode)
+
+// })
+
+
+// console.log(toggleBtn)
+
+
+// function outer() {
+//     let counter = 0;
+  
+//     function inner() {
+//       counter++;
+//       console.log(counter);
+//     }
+  
+//     return inner;
+//   }
+  
+//   const count = outer();
+//   count(); // 1
+//   count(); // 2
+//   count(); // 3
+  
+// let a = 10;
+// function foo() {
+//     console.log(a);
+//     let a = 5;
+// }
+// foo();
+
+
+
+
+
+
+
+
+
+
+

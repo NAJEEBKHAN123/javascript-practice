@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+       text-align: center;
+       background-color: gray;
+
+       
+      }
+      h1{
+        color: white;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        
+      }
+
+      main {
+        align-items: center;
+        padding: 20px;
+      }
+      .game {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        gap: 7px;
+        width: 70vmin;
+      }
+      .box {
+        width: 18vmin;
+        height: 18vmin;
+        font-size: 35px;
+        color: rgb(155, 80, 80);
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(241, 234, 234);
+      }
+      #reset-btn{
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: aquamarine;
+        cursor: pointer;
+        font-size: 20px;
+        
+      }
+      #new-btn{
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(161, 219, 200);
+        cursor: pointer;
+        font-size: 20px;
+        
+      }
+      #msg{
+        color: aliceblue;
+        font-size: 8vmim;
+
+      }
+      .msg-container{
+        height: 30vmin;
+      }
+      .hide{
+        display: none;
+      }
+    
+      </style>
+  </head>
+     
+  <body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <main>
+      <h1>Tac Toc Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+      <button id="reset-btn">Reset Game</button>
+    </main>
+
+    <script src="TactToc.js"></script>
+  </body>
+</html>
