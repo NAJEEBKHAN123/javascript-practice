@@ -346,10 +346,7 @@
 //   console.log(myTime)
 // }, 1000);
 
-
-
-// Practice q 
-
+// Practice q
 
 // function vovelWord(str) {
 //   let count = 0;
@@ -366,12 +363,11 @@
 // }
 
 // return count;
-// } 
+// }
 // const result = vovelWord("NajeebKhanii");
 // console.log(result)
 
 // method 2
-
 
 // function countVovel(str){
 //     const vowels = ['a', 'e', 'i', 'o', 'u'];
@@ -387,8 +383,8 @@
 
 // const result = countVovel('This is me najeeb')
 // console.log(result)
- 
-// arrow function 
+
+// arrow function
 
 // const countVovel = (str) =>{
 //     const vowels = ['a', 'e', 'i', 'o', 'u'];
@@ -404,7 +400,6 @@
 
 // const result = countVovel('This is me najeeb')
 // console.log(result)
-
 
 // const fruits = ["apple", "banana", "mango"];
 
@@ -460,7 +455,6 @@
 // })
 // console.log(result)
 
-
 // let n = prompt("enter a number")
 // let arr = [];
 
@@ -475,12 +469,10 @@
 // })
 // console.log(sum)
 
-
 // let multi = arr.reduce((prev, curr) =>{
 //     return prev * curr
 // })
 // console.log(multi)
-
 
 // Q: Modify the findVowels function to return only unique vowels found in a string.
 // Q: What is the difference between .forEach() and .map() in terms of return value and use case?
@@ -489,8 +481,6 @@
 // array after apply on the old array.
 
 // Q: Write a function isPerfectSquare(num) that checks if a number is a perfect square.
-
-
 
 // let arr =  [10,16, 9,43,54,64];
 
@@ -515,30 +505,26 @@
 //     let root = Math.sqrt(num);
 //     console.log(root)
 //     return root === Math.floor(root);
-  
+
 //   }
-
-
-
 
 // function findUniqueVowels(str) {
 //     const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
 //     const foundVowels = new Set();
-    
+
 //     for (const char of str.toLowerCase()) {
 //       if (vowels.has(char)) {
 //         foundVowels.add(char);
 //       }
 //     }
-    
+
 //     return Array.from(foundVowels).sort();
 //   }
-  
+
 //   // Example usage:
 //   console.log(findUniqueVowels("Hello Worldooo,u")); // ["e", "o"]
 //   console.log(findUniqueVowels("The quick brown fox")); // ["e", "i", "o", "u"]
 //   console.log(findUniqueVowels("JavaScript")); // ["a", "i"]
-
 
 // const arr = [1,2,3];
 // let result = arr.forEach((x) =>{
@@ -553,18 +539,17 @@
 //       setTimeout(() => console.log(this.name), 100);
 //     }
 //   };
-//   obj.greet();  
+//   obj.greet();
 
 // function sum(a = 1, b = 2) {
 //     return a + b;
 //   }
-//   console.log(sum(undefined, 3));  
+//   console.log(sum(undefined, 3));
 
 // console.log("good Morning".toLocaleUpperCase())
 // const nums = [1, 2, 3];
 // const sum = nums.reduce((prev , curr) => prev + curr, 0)
 // console.log(sum)
-
 
 // let arr = [13,43,45,54,76]
 
@@ -591,8 +576,6 @@
 // const nums = [1, 2, 3];
 // const sum1 = nums.reduce((acc, n) => acc + n);
 // const sum2 = nums.reduce((acc, n) => acc + n, 0);
-
-
 
 // const practice = (...argu) =>{
 //   return argu
@@ -630,7 +613,7 @@
 // const arr = [1, 2, 3]
 // arr.push(4);
 // console.log(arr.length); // ?
-// console.log(!!"a"); // 
+// console.log(!!"a"); //
 
 // let newElement = document.createElement('h2');
 // let newText = document.createTextNode('Hello Javascript');
@@ -655,7 +638,6 @@
 
 // console.log(target.innerText)
 
-
 // let divs = document.querySelectorAll('.box')
 
 // let idx = 1;
@@ -663,7 +645,6 @@
 //     div.innerText = `This is div ${idx}`
 //     idx++
 // }
-
 
 // console.log(divs)
 
@@ -684,7 +665,6 @@
 // let id = div.setAttribute('class', 'this')
 // console.log(div)
 
-
 // let div = document.getElementById('test')
 
 // let newElement = document.createElement('button')
@@ -703,12 +683,10 @@
 
 // console.log(target)
 
-
 // let target = document.querySelector('.content')
 // target.classList('class', 'newclass')
 
 // console.log(target)
-
 
 // let toggleBtn = document.querySelector('#toggle');
 // let currMode = 'light'
@@ -724,32 +702,29 @@
 //        document.querySelector('body').style.backgroundColor = "white"
 //        document.querySelector('body').style.color = "black"
 
-
 //     }
 //     console.log(currMode)
 
 // })
 
-
 // console.log(toggleBtn)
-
 
 // function outer() {
 //     let counter = 0;
-  
+
 //     function inner() {
 //       counter++;
 //       console.log(counter);
 //     }
-  
+
 //     return inner;
 //   }
-  
+
 //   const count = outer();
 //   count(); // 1
 //   count(); // 2
 //   count(); // 3
-  
+
 // let a = 10;
 // function foo() {
 //     console.log(a);
@@ -757,13 +732,207 @@
 // }
 // foo();
 
+// class myCar {
+//     constructor(name, year){
+//         this.name = name,
+//         this.year = year
+//     }
+//       car(model){
+//         this.model = model;
+//         console.log("Hey this is method inside the object")
+//       }
+// }
+
+// let mehran = new myCar('mehran', 2010);
+// console.log(mehran)
+
+// let furtuner = new myCar('furtuner', 2020);
+// console.log(furtuner)
+
+// let luxis = new myCar()
+// luxis.car('hey')
+
+// console.log(mehran.car)
+
+// class Car{
+//     constructor(brand){
+//         this.carName = brand;
+//     }
+
+// }
+
+// class Model extends Car{
+//     constructor(brand, model){
+//         super(brand);
+//         this.model = model;
+//     }
+// }
+
+// let myCar = new Model('toyota', 2000)
+// console.log(myCar)
+
+//  CALLBACK
+
+// const Hello = () =>{
+//   console.log("hello")
+// }
+
+// const sum = (a,b) =>{
+//     console.log(a+b)
+//   }
+
+// const display = (a,b, sum) =>{
+//     sum(a,b)
+// }
+// console.log(display(3,4, sum))
+
+// NESTED CALLBACK
+
+// function getData(dataId, getNextData){
+//     setTimeout(() => {
+//         console.log('data', dataId)
+//         if(getNextData){
+//             getNextData()
+//         }
+//     }, 2000);
+// }
+
+// getData(1, () =>{
+//     getData(2, () =>{
+//         getData(3)
+//     })
+// })
+
+// let myPromise = new Promise((resolve, reject) =>{
+//    setTimeout(() => {
+//     console.log('error')
+//     resolve('success')
+//    }, 1000);
+// })
+
+// let myPromise = new Promise((resolve, reject) =>{
+//   let success = false
+
+//   if(success){
+//     resolve('success')
+//   }else{
+//     reject('error')
+//   }
+//  })
+
+//  myPromise.then((result)=>{
+//     console.log(result)
+//  }).catch((result) =>{
+//     console.log(result)
+//  })
+
+// function myPromise1(){
+//    return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//           console.log("data1");
+//           resolve("success");
+//         }, 4000);
+//       });
+// }
+
+// function myPromise2() {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         console.log("data2");
+//         resolve("success");
+//       }, 4000);
+//     });
+//   }
+
+// console.log("fetching data1...");
+// myPromise1().then((res) =>{
+// console.log("fetching data2...");
+// return myPromise2()
+// .then((res) =>{
+//     console.log("fetchd all")
+// })
+// })
+
+// let myData = new Promise((resolve, reject) =>{
+//     setTimeout(() => {
+//         resolve(1)
+//     }, 2000);
+// })
+
+// .then((res) =>{
+//     console.log(res);
+//     return res * 2;
+// })
+// .then((res) =>{
+//     console.log(res)
+//      return res * 2
+// })
+// .then((res) =>{
+//     console.log(res)
+// })
+
+// ASYNC AND await
+
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataId);
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+
+// async function getAllData() {
+//   console.log("fetching data 1");
+//   await getData(1);
+//   console.log("fetching data 2");
+//   await getData(2);
+//   console.log("fetching data 3");
+//   await getData(3);
+//   console.log("fetching data 4");
+//   await getData(4);
+// }
+
+// getAllData();
+
+// async function  getAllData() {
+//     let res = await fetch('https://fakestoreapi.com/products',);
+//    let  jsonData = await res.json();
+//     console.log(jsonData)
+// }
+// getAllData()
 
 
+// CREATE POST 
+
+async function createPost() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            title: "this is 2nd data",
+            body: 'This is the content of my 2nd post',
+            userId: 1
+        }),
+        headers: {
+            'content-type' : "application/json; charset=UTF-8"
+        }
+    })
+    let data = await response.json();
+    console.log(data)
+}
+
+// createPost()
+
+let para = document.querySelector('.content')
+let toggleBtn = document.querySelector("#toggle")
+
+async function getAllData() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+    let data = await response.json()
+    para.innerText = data[5].body
+   
+}
 
 
-
-
-
-
-
-
+toggleBtn.addEventListener('click', getAllData)
