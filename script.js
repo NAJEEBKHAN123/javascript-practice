@@ -902,37 +902,417 @@
 // }
 // getAllData()
 
+// CREATE POST
 
-// CREATE POST 
+// async function createPost() {
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+//         method: 'POST',
+//         body: JSON.stringify({
+//             title: "this is 2nd data",
+//             body: 'This is the content of my 2nd post',
+//             userId: 1
+//         }),
+//         headers: {
+//             'content-type' : "application/json; charset=UTF-8"
+//         }
+//     })
+//     let data = await response.json();
+//     console.log(data)
+// }
 
-async function createPost() {
-    let response = await fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify({
-            title: "this is 2nd data",
-            body: 'This is the content of my 2nd post',
-            userId: 1
-        }),
-        headers: {
-            'content-type' : "application/json; charset=UTF-8"
-        }
-    })
-    let data = await response.json();
-    console.log(data)
+// // createPost()
+
+// let para = document.querySelector('.content')
+// let toggleBtn = document.querySelector("#toggle")
+
+// async function getAllData() {
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+//     let data = await response.json()
+//     para.innerText = data[5].body
+
+// }
+
+// toggleBtn.addEventListener('click', getAllData)
+
+//  JAVASCRIPT PRACTICE QUESTION AND ANSWER
+
+// 2️⃣ FizzBuzz Problem (Classic)
+
+// Question
+// Print numbers from 1 to 100:
+
+// If a number is divisible by 3 → print "Fizz".
+
+// If divisible by 5 → print "Buzz".
+
+// If divisible by both 3 and 5 → print "FizzBuzz".
+
+// Otherwise, print the number itself.
+
+// for (let num = 1; num <= 100; num++) {
+//   if (num % 3 === 0) {
+//     console.log("Fizz");
+//   }
+//   else if (num % 5 === 0) {
+//     console.log("Buzz");
+//   }
+
+//   else if (num % 3 === 0 && num % 5 === 0) {
+//     console.log("FizzBuzz");
+//   }
+//   else{
+//     console.log(num);
+//   }
+// }
+
+// 3️⃣ Find the Largest Number in an Array
+// Question:
+// Write a function that finds the largest element in a given array.
+
+// Example:
+// [1, 5, 8, 20, 13] → 20
+
+// let largestNum = [1, 5, 8, 20, 13];
+// let max = 0;
+
+// for(let i = 0; i <= 4; i++){
+//     if(largestNum[i] >= max){
+//         max = largestNum[i];
+//     }
+// }
+// console.log(max)
+
+// using String
+
+// let number = '1234679'
+// let max = 0;
+// for(let i= 0; i <=6; i++){
+//     if(number[i] >= max){
+//         max = number[i]
+//     }
+// }
+// console.log(max)
+
+// 5️⃣ Count Vowels in a String
+// Question:
+// Write a function that counts how many vowels (a, e, i, o, u) are present in a string.
+
+// Example:
+// "I am learning JavaScript" → 8 vowels
+
+// const findVowels = (str) => {
+//   let count = 0;
+//   for (let char of str) {
+//     if ((char === "a" || char === "e" || char === "i" || char === "o" || char === "u")){
+//         count++
+//     }
+//   }
+//   return count
+// };
+
+// const findVowels = (str) =>{
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let found = [];
+
+//     for(let char of str.toLowerCase()){
+//         if(vowels.includes(char))
+//             found.push(char)
+//     }
+//     return found;
+// }
+
+// let result = findVowels("I Am learning JavaScript");
+// console.log(result)
+
+// 4️⃣ Reverse a String (without .reverse())
+// Question:
+// Create a function that reverses a string manually.
+
+// Example:
+// "hello" → "olleh"
+
+// let reversed =  ["Banana", "Orange", "Apple", "Mango"];
+// let d =  reversed.reverse()
+// console.log(d)
+
+// function reverseStr(str){
+//     let newString = '';
+//     for(let i = str.length - 1;  i >= 0; i--){
+//      newString += str[i]
+//      console.log(newString)
+
+//     }
+//  }
+
+//  reverseStr('najeeb')
+
+// function reverseStr(str){
+//     let result =  str.split('').reverse().join('')
+//     console.log(result)
+
+// }
+// reverseStr('hello')
+
+// 1️⃣ Palindrome Checker
+// Question:
+// Write a function that checks whether a given string is a palindrome (same forward and backward).
+
+// Example:
+// "racecar" → true
+// "hello" → false
+
+//  for number
+
+// function palindromeCheck(str){
+//     let reverseVal = str.split('').reverse().join('')
+//     let result = str === reverseVal
+//    console.log(result)
+
+// }
+// palindromeCheck('hello') //false
+// palindromeCheck('racecar') //true
+
+// NEXT MESSION WITH 5 QUESTION
+
+// 1️⃣ Find Factorial of a Number
+
+// Question:
+// Write a function to find the factorial of a number n.
+
+// Example:
+// 5! = 5×4×3×2×1 = 120
+
+// const findFactorial =(num) =>{
+//   let res = 1;
+//   for(let i = num; i >= 1; i--){
+//     res *= i
+// }
+// return res;
+
+// }
+
+// const result = findFactorial(5)
+// console.log(result)
+
+// 2️⃣ Sum of All Numbers in an Array
+
+// Question:
+// Write a function that calculates the sum of all numbers inside an array.
+
+// Example:
+// [1, 2, 3, 4, 5] → 15
+
+// let arr = [1, 2, 3, 4, 5, 7];
+// let sum = 0;
+
+// function findTotolSum() {
+//   arr.reduce((curr, prev) => {
+//     sum = curr + prev;
+//     return curr + prev;
+//   });
+// }
+// findTotolSum();
+// console.log(sum);
+
+// 3️⃣ Find Duplicate Elements in an Array
+
+// Question:
+// Create a function that returns all duplicate elements in an array.
+
+// Example:
+// [1,2,3,2,4,5,1] → [1,2]
+
+// let arr = [1,2,3,2,4,5,1,5]
+
+// let duplicate = arr.filter((item, index) => arr.indexOf(item) !== index)
+// duplicate.sort()
+
+// console.log(duplicate)
+
+// 4️⃣ Find the Longest Word in a String
+
+// Question:
+// Write a function to find the longest word in a sentence.
+
+// Example:
+// "I am learning JavaScript very seriously" → "JavaScript"
+
+// 5️⃣ Check Prime Number
+// Question:
+// Write a function to check if a number is prime or not.
+
+// Prime number = Only divisible by 1 and itself
+// Example:
+// 2, 3, 5, 7, 11, 13, 17 are prime numbers.
+
+// let PrimeNumber = (num) => {
+//   isPrime = true;
+
+//   if (num === 1) {
+//     console.log("1 is not prime and nor composite number");
+//   } else if (num > 1) {
+//     for (let i = 2; i <= num / 2; i++) {
+//       if (num % 2 === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) {
+//       console.log(`${num} is a prime number`);
+//     } else {
+//       console.log(`${num} is not a prime number`);
+//     }
+//   } else {
+//     console.log("The number is not a prime number.");
+//   }
+// };
+// console.log(PrimeNumber(9));
+
+// 🧠 10 Easy JavaScript Logic Problems:
+
+// 1. Print numbers from 1 to 10
+// for(let i = 1; i <= 100; i++){
+//   console.log(i)
+// }
+
+// 2. Print even numbers from 1 to 20
+// for(let i = 1; i <= 20; i++){
+//   if(i%2 === 0){
+//     console.log(i ,'Even number')
+//   }
+// }
+
+// 3. Find the sum of numbers from 1 to 100
+
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   sum = sum + i;
+// }
+// console.log(sum);
+
+// 4. Find if a number is even or odd
+// let sum = 0;
+// for(let num = 1; num <= 50; num++){
+//   if(num % 2 === 0){
+//     console.log("even number", num)
+//   }else{
+//     console.log('odd number', num)
+//   }
+//   sum = sum + num;
+
+// }
+// console.log(sum) //1275
+
+// ✅ Take a number. Check if number % 2 == 0.
+
+// let findEvenOdd = (num) =>{
+//   if(num % 2 === 0){
+//     console.log('even number', num)
+//   }else{
+//     console.log('odd number', num)
+//   }
+// }
+
+// const result = findEvenOdd(2340)
+// console.log(result)
+
+// 5. Find the largest of two numbers
+
+// let findLargestVal = (a,b) =>{
+//   if(a > b){
+//     console.log('A is greater then B')
+//   }
+//   else {
+//     console.log('B is greater then A')
+//   }
+// }
+
+// let result = findLargestVal(32,4)
+// console.log(result)
+
+// 6. Reverse a string
+
+// let reverseStr = (str) =>{
+//   return str.split('').reverse().join('')
+// }
+
+// let result = reverseStr('hello')
+// console.log(result)
+
+// without javascript method
+
+// let result = findLargestVal(32,4)
+// console.log(result)
+
+// 6. Reverse a string
+
+// let reverseStr = (str) => {
+//   let newString = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newString += str[i];
+//     console.log(newString);
+//   }
+// };
+
+// let result = reverseStr("hello");
+// console.log(result);
+
+
+// 7. Find the factorial of a number
+
+// let findFactorial = (num) =>{
+//   let res = 1;
+//     for(let i = 1;  i <= num; i++){
+//       res *= i;
+//     }
+//     return res;
+// }
+
+// let res = findFactorial(5)
+// console.log(res)
+
+
+// 8. Check if a word is a palindrome
+
+// let findPalindrome = (str) =>{
+//    let reverseStr = str.split('').reverse().join('')
+//    return reverseStr === str
+
+// }
+//   let findPalindrome = (str) =>{
+//       let newString = '';
+//       for (let i = str.length - 1; i >= 0;  i--){
+//         newString +=  str[i]
+//     }
+    
+//     return newString === str;
+//     }
+
+
+// let res = findPalindrome('razarr') // false,
+// // let res = findPalindrome('razarr') // true,
+
+
+// console.log(res)
+
+// 9. Find the minimum number in an array
+
+// let arr = [2,3,45,6,66,576]
+// let res = Math.min(...arr)
+// console.log(res)
+
+// 10. Remove duplicates from an array
+
+// let arr = [2,3,45,6,66,576]
+//  let res = arr.filter((item, index) => item.indexOf() !== index )
+//  console.log(res)
+
+
+//  🧠 20 More JavaScript Logic Problems:
+// 1. Find the sum of all even numbers between 1 and 50.
+for (let i = 1; i <= 50; i++){
+    if(i%2 === 0){
+        console.log(i)
+    }
 }
-
-// createPost()
-
-let para = document.querySelector('.content')
-let toggleBtn = document.querySelector("#toggle")
-
-async function getAllData() {
-    let response = await fetch('https://jsonplaceholder.typicode.com/posts')
-
-    let data = await response.json()
-    para.innerText = data[5].body
-   
-}
-
-
-toggleBtn.addEventListener('click', getAllData)
