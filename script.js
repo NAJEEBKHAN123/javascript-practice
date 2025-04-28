@@ -1311,8 +1311,56 @@
 
 //  🧠 20 More JavaScript Logic Problems:
 // 1. Find the sum of all even numbers between 1 and 50.
-for (let i = 1; i <= 50; i++){
-    if(i%2 === 0){
-        console.log(i)
-    }
-}
+// for (let i = 1; i <= 50; i++){
+//     if(i%2 === 0){
+//         console.log(i)
+//     }
+// }
+
+// 2. Count how many vowels are in a string.
+
+// let findVowels = (str) =>{
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let newArr = [];
+//     for(let char of str.toLowerCase())
+//       if(vowels.includes(char)){
+//         newArr.push(char)
+//       }
+//     return newArr
+// }
+
+// let res = findVowels('hElloOksdupqwajkva icaf naskjfaiufkjhauiraskflauy')
+// console.log(res)
+
+
+// 3. Find the largest number in an array without using Math.max().
+ 
+// let arr = [1,2,4,6,65,34,343]
+// let max = 0;
+
+// for(let i = 0; i <= 6; i++){
+//   if(arr[i] > max){
+//     max = arr[i];
+//   }
+// }
+// console.log(max)
+
+// 4. Find the second largest number in an array.
+
+ 
+let arr = [1,2,63,65,34,43,42]
+
+arr.sort()
+console.log(arr)
+
+
+arr.map((val) =>{
+  val.length
+  console.log(val)
+})
+
+// for(let i = 0; i <= 6; i++){
+   
+//   console.log(arr[i].length )
+// }
+
