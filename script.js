@@ -1258,7 +1258,6 @@
 // let result = reverseStr("hello");
 // console.log(result);
 
-
 // 7. Find the factorial of a number
 
 // let findFactorial = (num) =>{
@@ -1272,7 +1271,6 @@
 // let res = findFactorial(5)
 // console.log(res)
 
-
 // 8. Check if a word is a palindrome
 
 // let findPalindrome = (str) =>{
@@ -1285,14 +1283,12 @@
 //       for (let i = str.length - 1; i >= 0;  i--){
 //         newString +=  str[i]
 //     }
-    
+
 //     return newString === str;
 //     }
 
-
 // let res = findPalindrome('razarr') // false,
 // // let res = findPalindrome('razarr') // true,
-
 
 // console.log(res)
 
@@ -1307,7 +1303,6 @@
 // let arr = [2,3,45,6,66,576]
 //  let res = arr.filter((item, index) => item.indexOf() !== index )
 //  console.log(res)
-
 
 //  🧠 20 More JavaScript Logic Problems:
 // 1. Find the sum of all even numbers between 1 and 50.
@@ -1332,9 +1327,8 @@
 // let res = findVowels('hElloOksdupqwajkva icaf naskjfaiufkjhauiraskflauy')
 // console.log(res)
 
-
 // 3. Find the largest number in an array without using Math.max().
- 
+
 // let arr = [1,2,4,6,65,34,343]
 // let max = 0;
 
@@ -1347,20 +1341,164 @@
 
 // 4. Find the second largest number in an array.
 
- 
-let arr = [1,2,63,65,34,43,42]
+// let arr = [1,2,63,65,34,43,99,100,42]
 
-arr.sort()
-console.log(arr)
+// arr.sort((a, b) => b - a)
 
+// let secondLargest = arr[1]
+// console.log(secondLargest)
 
-arr.map((val) =>{
-  val.length
-  console.log(val)
-})
+// 5. Print a multiplication table of any number (like 5 × 1 = 5, 5 × 2 = 10...).
 
-// for(let i = 0; i <= 6; i++){
-   
-//   console.log(arr[i].length )
+// let muitipleTable = (num) =>{
+//     for(let i = 1; i <= 10; i++){
+//       let muilti = i * num
+//       console.log(`the multiple ${num} * ${i} = ${muilti}`)
+//     }
 // }
+
+// let res = muitipleTable(5);;
+// console.log(res)
+
+// 6. Swap two variables without using a third variable.
+
+// let a = 10;
+// let b = 20;
+// let c;
+
+// c = a;
+// a = b;
+// b = c;
+
+// console.log(a)
+// console.log(b)
+
+// WITHOUT USING THIRD VAIRBALE
+
+// let a  = 10;
+// let b = 20;
+
+// a = a + b;
+// b = a - b;
+// a = a - b;
+
+// console.log(a)
+// console.log(b)
+
+// 7. Check if a number is prime (only divisible by 1 and itself).
+
+// let findPrime = (num) => {
+//   if (num < 1) {
+//     return console.log("enter a positive number");
+//   } else if (num === 1) {
+//     return console.log("1 is not prime number and nor composite");
+//   }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return console.log(`${num}: it is not a pirme number`);
+//     }
+//   }
+
+//   return console.log(`${num}: it is pirme number`);
+// };
+
+// let res = findPrime(25);
+
+// 8. Create a function that returns the first character of a string.
+
+// let findFirstChar = (str) =>{
+//   for(let char of str){
+//     return char
+//   }
+// }
+
+// let findFirstChar = (str) => {
+//   if (!str) return 'String is empty';
+//   return str[0];
+// };
+
+// const res = findFirstChar('khello')
+// console.log(res)
+
+// 9. Find the length of a string without using .length property.
+
+// let findLength = (str) => {
+//   let count = 0;
+
+//   for (let i = 0; i <= str.length; i++) {
+//     count = i;
+//   }
+//   return count;
+// };
+// let res = findLength("helloooo");
+// console.log(res);
+
+// 10. Reverse an array manually (without .reverse()).
+
+// let arr = [1,2,13,4,5,6];
+// let newArr = []
+// for(let i = arr.length - 1; i >= 0; i--){
+//  newArr.push(arr[i])
+
+// }
+// console.log(newArr)
+
+// 11. Check if two strings are anagrams.
+// (Example: "listen" and "silent" are anagrams.)
+
+// 16. Print all prime numbers between 1 and 50.
+
+
+
+// for(let num = 2; num <= 50; num++){
+//   isPrime = true;
+
+//   for(let i = 2; i <= Math.sqrt(num); i++){
+//     if(num % i === 0){
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if(isPrime){
+//     console.log(num)
+//   }
+// }
+
+// 17. Find the missing number in an array from 1 to 10.
+
+
+
+// 18. Create a function that capitalizes the first letter of each word in a sentence.
+
+
+
+
+// function capitalizeWords(sentence) {
+//   return sentence
+//     .split(' ')
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ');
+// }
+
+// // Example usage:
+// const input = "hello world, this is javascript!";
+// const result = capitalizeWords(input);
+// console.log(result)
+
+// 12. Remove all falsy values (false, 0, '', null, undefined, NaN) from an array.
+
+
+// let removeFalsyValues = (arr) =>{
+//   return arr.filter(Boolean);
+
+// }
+
+// const myArray = [0, "hello", false, 42, "", null, undefined, NaN, "world"];
+
+// let res = removeFalsyValues(myArray)
+// console.log(res)
+
+
+// 13. Find the number of digits in a number.
+// (Example: 4567 → 4 digits.)
 
