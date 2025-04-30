@@ -1448,8 +1448,6 @@
 
 // 16. Print all prime numbers between 1 and 50.
 
-
-
 // for(let num = 2; num <= 50; num++){
 //   isPrime = true;
 
@@ -1466,12 +1464,7 @@
 
 // 17. Find the missing number in an array from 1 to 10.
 
-
-
 // 18. Create a function that capitalizes the first letter of each word in a sentence.
-
-
-
 
 // function capitalizeWords(sentence) {
 //   return sentence
@@ -1487,10 +1480,8 @@
 
 // 12. Remove all falsy values (false, 0, '', null, undefined, NaN) from an array.
 
-
 // let removeFalsyValues = (arr) =>{
-//   return arr.filter(Boolean);
-
+//   return arr.filter(Boolean)
 // }
 
 // const myArray = [0, "hello", false, 42, "", null, undefined, NaN, "world"];
@@ -1498,7 +1489,257 @@
 // let res = removeFalsyValues(myArray)
 // console.log(res)
 
-
 // 13. Find the number of digits in a number.
 // (Example: 4567 → 4 digits.)
 
+// 🧩 Intermediate JavaScript Logic Challenges:
+
+// FizzBuzz
+// Print numbers from 1 to 100.
+// If divisible by 3 → print "Fizz"
+// If divisible by 5 → print "Buzz"
+// If both → print "FizzBuzz"
+
+// for(let i = 1; i <= 100; i++){
+//      if (i % 3 === 0 && i % 5 === 0){
+//         console.log('FizzBuzz')
+//     }
+//    else if(i % 3 === 0){
+//         console.log('Fizz')
+//     }
+//      else if(i % 5 === 0){
+//         console.log('Buzz')
+//     }else {
+//         console.log(i)
+//     }
+
+// }
+
+// Check if an array is sorted (ascending or not)
+
+// let arr = [1,24,45,65,67,76,2];
+// let arr = [1, 2, 3, 4, 5];
+
+// let orignal = [...arr];
+
+// let sorted = [...arr].sort((a, b) => a - b);
+
+// let isSorted = true;
+
+// for (let i = 0; i < orignal.length; i++) {
+//   if (orignal[i] !== sorted[i]) {
+//     isSorted = false;
+//     break;
+//   }
+// }
+
+// if (isSorted) {
+//   console.log("sorted");
+// } else {
+//   console.log("not sorted");
+// }
+
+// Create a function to chunk an array into smaller arrays Example:
+// chunk([1,2,3,4,5], 2) → [[1,2], [3,4], [5]]
+
+// let chunkArr = (arr) =>{
+//     return arr
+// }
+
+// let arr = [1,2,3,4,5,6,7,8];
+// let res = chunkArr(arr);
+// console.log((res));
+
+// Capitalize the first letter of each word
+
+// let capitalizeWords = (str) =>{
+//     return str
+//     .split(' ')
+//     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ')
+// }
+// let str = 'this is me najeeb khan';
+// let res = capitalizeWords(str)
+// console.log(res)
+
+// Convert Celsius to Fahrenheit
+// F = (C * 9/5) + 32
+// let CelToFah = (celVal) =>{
+
+//     return `Convert the ${celVal} Celsius to Fahrenheit is = ${(celVal * 9/5) + 32}`
+// }
+
+// let calculates = CelToFah(37)
+// console.log(calculates)
+
+// Remove duplicate characters from a string
+// Example: "aabbcdd" → "abcd"
+
+// Remove duplicate characters from a string
+// Example: "aabbcdd" → "abcd"
+
+// let findDuplicate = (str) =>{
+//     console.log(str)
+//     const x = str.filter((number, index, array) => array.indexOf(number) !== index);
+//     console.log(x)
+// }
+
+// let arr = [1,2,3,4,3,43,2,4,5,6,7]
+// let res = findDuplicate(arr);
+// console.log(res)
+
+// FIND FOR STRING
+
+// let findDuplicate = (str) =>{
+//     let string = [...str]
+//     console.log(string)
+//     const x = string.filter((number, index, array) => array.indexOf(number) === index);
+//    let res = x.join('')
+//     console.log(res)
+// }
+
+// let arr = 'thisismenajeebfrombajaur'
+// let res = findDuplicate(arr);
+// console.log(res)
+
+// Count how many times each word appears in a sentence
+
+// let findEveryWord = (str) =>{
+//     let sentence = str.toLowerCase().split(/\s+/)
+//   let countWord = {};
+
+//   for(let word of sentence){
+//     countWord[word] = (countWord[word] || 0) + 1;
+//   }
+//   return countWord;
+// }
+
+// const sentence = "This is a test sentence. This sentence is a test.";
+// const counts = findEveryWord(sentence);
+// console.log(counts);
+
+// Find the longest word in a sentence
+
+// let findLongestWord = (sentence) => {
+//     sentence = sentence.replace(/[^\w\s]/g, '');
+//   let splitSen = sentence.split(" ");
+
+//   let LongestWord = "";
+
+//   for (let word of splitSen) {
+//     if (word.length > LongestWord.length) {
+//         LongestWord = word;
+//     }
+//   }
+//   return LongestWord;
+// };
+
+// const sentence = "This is a test sentence. This senten najeebkhan is a test.";
+// const counts = findLongestWord(sentence);
+// console.log(counts);
+
+// Create a custom includes() function without using .includes()
+
+// let customInclude = (num) =>{
+//     let arr = [4,22,3,22,5,6,27]
+//     for(let i = 0; i < arr.length; i++){
+//         if(num === arr[i]){
+//             return num;
+//         }
+//     }
+//     return -1
+// }
+
+// let res = customInclude(27)
+// console.log(res)
+
+// 🔁 3–5 Questions for Quick Recall:
+
+// Try solving these again without looking back — test your logic.
+
+// Remove duplicates from an array
+// [1, 2, 2, 3, 4, 4, 5] → [1, 2, 3, 4, 5]
+
+// let arr = [1, 2, 2, 3, 4, 4, 5];
+// console.log(arr)
+
+// let newArr = arr.filter((value, index, array) => array.indexOf(value) === index)
+
+// console.log(newArr)
+
+// Capitalize the first letter of each word in a sentence
+// 'this is me najeeb khan' → 'This Is Me Najeeb Khan'
+
+// let capitalizeWords = (str) =>{
+//     return str.
+//     split(' ')
+//     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ')
+// }
+
+// let res = capitalizeWords('hello this is me najeeb');
+// console.log(res)
+
+// Check if an array is sorted (ascending order)
+
+// let arr = [1, 2, 3, 4, 6, 3, 2, 7];
+
+// let orignal = [...arr]
+// let sorted = [...arr].sort((a, b) => a - b);
+
+
+
+// let isSorted = true;
+
+// for (let i = 0; i <= orignal.length; i++) {
+//     if(orignal[i] !== sorted[i]){
+//        isSorted = false;
+//        break;
+//     }
+
+//   if (isSorted) {
+//     console.log("sorted");
+//   } else {
+//     console.log(" not sorted");
+//   }
+// }
+
+// Find the longest word in a sentence
+// 'Najeeb is coding in Javascript' → 'Javascript'
+
+// let findLargestVal = (str) =>{
+//     let splitSen = str.split(' ');
+    
+//     let largestWord = '';
+
+//     for(let i = 0; i < splitSen.length; i++){
+//         if(splitSen[i].length > largestWord.length){
+//             largestWord = splitSen[i]
+//         }
+        
+//     }
+//     return largestWord
+   
+// }
+
+// let res = findLargestVal('Najeeb is coding in Javascript');
+// console.log(res)
+
+
+// Count how many times each word appears
+// "this is a test. this is only a test."
+// → { this: 2, is: 2, a: 2, test: 2, only: 1 }
+
+
+// let findEachWord = (str) =>{
+//     let spliteIt = str.split(' ')
+//     let countWord = {};
+
+//     for(let word of spliteIt){
+//         countWord[word] = (countWord[word] || 0 ) + 1;
+//     }
+//     return countWord;
+// }
+
+// let res = findEachWord('this is me najeeb and this is me khan')
+// console.log(res)
