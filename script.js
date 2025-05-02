@@ -1446,6 +1446,19 @@
 // 11. Check if two strings are anagrams.
 // (Example: "listen" and "silent" are anagrams.)
 
+// let areAnagrams = (s1 ,s2)  =>{
+
+//     s1 = s1.split('').sort().join('')
+//     s2 = s2.split('').sort().join('')
+
+//     return s1 === s2;
+
+// }
+
+// const s1 = "geeks";
+// const s2 = "kseeg";
+// console.log(areAnagrams(s1, s2));
+
 // 16. Print all prime numbers between 1 and 50.
 
 // for(let num = 2; num <= 50; num++){
@@ -1492,6 +1505,20 @@
 // 13. Find the number of digits in a number.
 // (Example: 4567 → 4 digits.)
 
+// let countDigit = (num) => {
+//   if (num === 0) return 1;
+
+//   let count = 0;
+
+//   while (num !== 0) {
+//     num = Math.floor(num / 10);
+//     ++count;
+//   }
+//   return count;
+// };
+
+// let num = 24245;
+// console.log(countDigit(num));
 // 🧩 Intermediate JavaScript Logic Challenges:
 
 // FizzBuzz
@@ -1683,25 +1710,24 @@
 // Check if an array is sorted (ascending order)
 
 // let arr = [1, 2, 3, 4, 6, 3, 2, 7];
+// let arr = [1,2,3,4]
 
 // let orignal = [...arr]
 // let sorted = [...arr].sort((a, b) => a - b);
 
-
-
 // let isSorted = true;
 
-// for (let i = 0; i <= orignal.length; i++) {
+// for (let i = 0; i < orignal.length; i++) {
 //     if(orignal[i] !== sorted[i]){
 //        isSorted = false;
 //        break;
 //     }
-
+// }   
 //   if (isSorted) {
 //     console.log("sorted");
 //   } else {
-//     console.log(" not sorted");
-//   }
+//     console.log("not sorted");
+ 
 // }
 
 // Find the longest word in a sentence
@@ -1709,27 +1735,25 @@
 
 // let findLargestVal = (str) =>{
 //     let splitSen = str.split(' ');
-    
+
 //     let largestWord = '';
 
 //     for(let i = 0; i < splitSen.length; i++){
 //         if(splitSen[i].length > largestWord.length){
 //             largestWord = splitSen[i]
 //         }
-        
+
 //     }
 //     return largestWord
-   
+
 // }
 
 // let res = findLargestVal('Najeeb is coding in Javascript');
 // console.log(res)
 
-
 // Count how many times each word appears
 // "this is a test. this is only a test."
 // → { this: 2, is: 2, a: 2, test: 2, only: 1 }
-
 
 // let findEachWord = (str) =>{
 //     let spliteIt = str.split(' ')
@@ -1739,7 +1763,136 @@
 //         countWord[word] = (countWord[word] || 0 ) + 1;
 //     }
 //     return countWord;
-// }
+//
 
 // let res = findEachWord('this is me najeeb and this is me khan')
+// console.log(res)
+
+// ✅ Now... 10 Fresh JS Logic Challenges:
+
+// Take your time and do these with clarity:
+
+// Reverse a string
+// 'najeeb' → 'beejan'
+
+// let reversedStr = (str) =>{
+//     let res = str.split(' ').reverse().join(' ')
+//     return res
+// }
+
+// let res = reversedStr('helloo');
+// console.log(res)
+
+// let str = 'najeeb';
+//  let res = str.split('').reverse().join('')
+// console.log(res)
+
+// Custom filter() function — like you did with map()
+
+// Check if a number is prime
+// 7 → true, 10 → false
+
+// let findPrime = (num) => {
+//   if (num < 1) {
+//     console.log("Enter positive number");
+//   } else if (num === 1) {
+//     return console.log("1: is not prime number and nor composite");
+//   }
+
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return console.log("not prime number");
+//     }
+//   }
+//   return "prime number";
+// };
+
+// let res = findPrime(23);
+// console.log(res);
+
+// Find second largest number in an array
+// [10, 5, 20, 8] → 10
+
+// for max value
+// let arr = [10, 5, 20, 8]
+// let res = Math.max(...arr)
+// console.log(res)
+
+// let arr = [1,44,54,65,76,86,23,56];
+
+// let orignalArr = [...arr].sort((a,b) => a-b);
+// let res = orignalArr.reverse()
+// console.log(res[1])
+
+// Check if a string is a palindrome
+// 'madam' → true, 'hello' → false
+
+// let findPalindrome = (str) =>{
+//     let newString = str.toLowerCase()
+//     let reverse = str.split('').reverse().join('')
+
+//    return newString === reverse
+
+// }
+
+// let res = findPalindrome('madam')
+// console.log(res)
+
+// Convert a sentence to camelCase
+// 'this is my code' → 'thisIsMyCode'
+
+// let camelCase = (str) =>{
+//     return str.toLowerCase().split(' ').map((word, index) => {
+//         return index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1);
+//     }).join('')
+
+// }
+
+// console.log(camelCase('this is my code'))
+
+// Custom includes() for string
+// Like 'hello'.includes('ell') → true
+
+// this is for array
+// let findCustomIncludes = (num) =>{
+//     let arr = [2,4,5,6,7,8,5];
+
+//     for(let i = 0; i < arr.length; i++){
+//         if(num === arr[i]){
+//             return num;
+//         }
+//         return -1
+//     }
+
+// }
+
+// let res = findCustomIncludes(2)
+// console.log(res)
+
+// for string
+
+// let findCustomIncludes = (searchString) => {
+//     let text = 'hello';
+
+//     for (let i = 0; i <= text.length - searchString.length; i++) {
+//         if (text.substring(i, i + searchString.length) === searchString) {
+//             return true;
+//         }
+//     }
+
+//     return false;
+// };
+
+// let res = findCustomIncludes('ell');
+// console.log(res); // ✅ true
+
+// Flatten a nested array
+// [1, [2, [3, 4]], 5] → [1, 2, 3, 4, 5]
+
+// let Flatten = (arr) =>{
+//     return arr.flat(Infinity)
+// }
+
+// const nestedArray = [1, [2, [3, 4], 5], 6];
+// let res = Flatten(nestedArray)
 // console.log(res)
