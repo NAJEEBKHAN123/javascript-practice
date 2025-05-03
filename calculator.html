@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: gray;
+        text-align: center;
+        width: 300px;
+        border-radius: 10px;
+      }
+      .btn {
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn button {
+        border-radius: 50px;
+        border: none;
+        box-shadow: 5px 5px;
+        cursor: pointer;
+        gap: 10px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+
+      #input {
+        padding: 8px 6px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background-color: beige;
+        margin: 10px;
+        box-shadow: 2px 2px;
+        margin-top: 20px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div>
+          <input id="input" type="text" placeholder=""  />
+        </div>
+        <div class="btn">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>+</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>-</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>x</button>
+          <button>C</button>
+          <button>0</button>
+          <button>=</button>
+          <button>/</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
