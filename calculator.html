@@ -43,6 +43,7 @@
         width: 50px;
         height: 50px;
         margin-bottom: 10px;
+        font-size: 18px;
       }
 
       #input {
@@ -55,6 +56,7 @@
         box-shadow: 2px 2px;
         margin-top: 20px;
         border-radius: 3px;
+        text-align: right;
       }
     </style>
   </head>
@@ -62,25 +64,25 @@
     <main>
       <div class="main-container">
         <div>
-          <input id="input" type="text" placeholder=""  />
+          <input id="input" type="text" disabled  />
         </div>
         <div class="btn">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>+</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>-</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>x</button>
-          <button>C</button>
-          <button>0</button>
-          <button>=</button>
-          <button>/</button>
+          <button onclick="append('7')">7</button>
+          <button onclick="append('8')">8</button>
+          <button onclick="append('9')">9</button>
+          <button onclick="append('+')">+</button>
+          <button onclick="append('4')">4</button>
+          <button onclick="append('5')">5</button>
+          <button onclick="append('6')">6</button>
+          <button onclick="append('-')">-</button>
+          <button onclick="append('1')">1</button>
+          <button onclick="append('2')">2</button>
+          <button onclick="append('3')">3</button>
+          <button onclick="append('*')">x</button>
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="append('0')">0</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="append('1')">/</button>
         </div>
       </div>
     </main>
