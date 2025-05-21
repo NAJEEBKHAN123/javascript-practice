@@ -1,7 +1,6 @@
 
-
-
 let count = 0;
+
 
 function updateDisplay() {
   document.getElementById("count").textContent = count;
