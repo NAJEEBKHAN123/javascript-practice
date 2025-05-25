@@ -400,6 +400,102 @@
 
 // Handle a click event on multiple buttons.
 
+//  const button = document.querySelectorAll('.myBtn')
+
+//  button.forEach((button, index) =>{
+//     button.addEventListener('click' , ()=>{
+//     alert(`You clicked Button ${index + 1}`);
+
+//     })
+//  })
+
 // Create a real-time character counter for a textarea.
 
+// let textArea = document.getElementById('textarea'); 
+// let counter = document.getElementById('counter')
+
+// textArea.addEventListener('input', () =>{
+//     counter.textContent = textArea.value.length
+// })
+// console.log(textArea)
+
 // Show/hide password input using a checkbox.
+
+// function myFunction(){
+//     let input = document.getElementById('myInput');
+//     if(input.type === 'password'){
+//         input.type = 'text'
+//     }else{
+//         input.type = 'password'
+
+//     }
+// }
+
+// ✅ Day 13: Error Handling & Debugging
+// Create this:
+
+// Write a function that divides two numbers and handles division by zero using try...catch.
+
+// function divided(a, b){
+//     try {
+//         if(b === 0){
+//             throw new error('cannot divided by 0')
+//         }
+//         let result = a / b;
+//         return result
+//     } catch (error) {
+//        console.log( error.message())
+//     }
+// }
+
+// console.log(divided(2,0))
+
+
+
+// Simulate an error (like undefined variable) and catch it safely.
+
+// Use console.log(), console.warn(), and console.error() to debug a script.\
+
+// ✅ Day 14: Mini Project – To-Do List
+// Create this:
+
+// A to-do list app with:
+
+// Input box for task
+
+// Add button
+
+// Task list display
+
+// Delete task option
+
+// (Optional) Save tasks to localStorage
+
+
+function AddTodo(){
+    let input = document.getElementById('input')
+    let inputText = input.value;
+
+    if(inputText.trim() === ''){
+        alert("Enter something")
+        return 
+    }
+
+    let li = document.createElement('li')
+    li.textContent = inputText
+
+    let remove = document.createElement('button')
+    remove.textContent = 'remove'
+    li.appendChild(remove)
+
+
+    let todoList = document.getElementById('todoList')
+    todoList.appendChild(li)
+
+
+    remove.onclick = () => {
+        li.remove()
+    }
+ 
+    input.value = ''
+}

@@ -4,70 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <style>
       main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px;
         text-align: center;
-      }
-      .main-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
         flex-direction: column;
-        background-color: gray;
-        text-align: center;
-        width: 300px;
-        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
       }
-      .btn {
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        border: 1px solid red;
         padding: 10px;
+      }
+      input {
+        padding: 6px 16px;
+        outline: none;
         margin-bottom: 10px;
+        text-align: end;
+        font-size: bold;
+      }
+
+      .buttonDiv {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 8px;
         justify-content: center;
         align-items: center;
+        gap: 5px;
       }
-      .btn button {
-        border-radius: 50px;
-        border: none;
-        box-shadow: 5px 5px;
-        cursor: pointer;
-        gap: 10px;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
-        font-size: 18px;
-      }
-
-      #input {
-        padding: 8px 6px;
-        border: none;
-        outline: none;
-        font-size: 20px;
-        background-color: beige;
-        margin: 10px;
-        box-shadow: 2px 2px;
-        margin-top: 20px;
-        border-radius: 3px;
-        text-align: right;
+      button {
+        width: 40px;
+        height: 40px;
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="main-container">
-        <div>
-          <input id="input" type="text" disabled  />
-        </div>
-        <div class="btn">
-          <button onclick="append('7')">7</button>
+    <main class="main">
+      <h1>Calculator</h1>
+
+      <div class="container">
+        <input type="text" id="input"/>
+        <div class="buttonDiv">
+           <button onclick="append('7')">7</button>
           <button onclick="append('8')">8</button>
           <button onclick="append('9')">9</button>
           <button onclick="append('+')">+</button>
@@ -86,7 +69,6 @@
         </div>
       </div>
     </main>
-
-    <script src="calculator.js"></script>
+    <script src="Calculator2.js"></script>
   </body>
 </html>
